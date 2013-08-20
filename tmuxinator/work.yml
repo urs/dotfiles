@@ -1,0 +1,35 @@
+# ~/.tmuxinator/work.yml
+
+name: work
+root: ~/
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+pre: TERM=xterm-256color
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+windows:
+   - Development: "cd ~/work/scarosso/shop-new"
+   - Puppet: "cd ~/work/scarosso/puppet"
+   - vagrant: "cd ~/work/scarosso/vagrant"
+   - Varnish-Control:
+       layout: main-vertical
+       panes:
+         - ssh web1 -t 'varnishstat'
+         - ssh web1 -t 'varnishtop'
+         - ssh web1 -t 'varnishhist'
+         - ssh web1
+#  - editor:
+#      layout: main-vertical
+#      panes:
+#        - vim
+#        - guard
+#  - server: bundle exec rails s
+#  - logs: tail -f logs/development.log
