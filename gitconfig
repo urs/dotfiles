@@ -12,3 +12,7 @@
 	amend = commit --amend -C HEAD
 [color]
         ui = true
+[push]
+	default = simple
+[rerere]
+	enabled = true

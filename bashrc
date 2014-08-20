@@ -106,15 +106,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 #############################################################################
-# TMUX
-source ~/.bin/tmuxinator.bash
-
-if [[ "$TMUX" == "" ]]
-then
-  tmuxinator work
-fi
-
-#############################################################################
 # AWS credentials
 #export EC2_PRIVATE_KEY=$(echo $HOME/.aws/pk-*.pem)
 #export EC2_CERT=$(echo $HOME/.aws/cert-*.pem)

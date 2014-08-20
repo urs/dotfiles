@@ -17,10 +17,11 @@
 
 "indentation
   set expandtab
-  set shiftwidth=2
-  set softtabstop=2
-  set tabstop=2
+  set shiftwidth=4
+  set softtabstop=4
+  set tabstop=4
   set cindent
+  set cinkeys=0{,0},!^F,o,O,e " default is: 0{,0},0),:,0#,!^F,o,O,e
 
 "search
   set incsearch
@@ -53,3 +54,4 @@ noremap <space> @=((foldclosed(line(".")) < 0) ? 'zc' : 'zo')<cr>
 nmap <F2> :NERDTreeToggle<cr>
 imap <F2> <esc> :NERDTreeToggle<cr>
 
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/

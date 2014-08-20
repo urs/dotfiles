@@ -1,7 +1,3 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/etc/puppet'
-let g:netrw_dirhist_2='/opt/work/scarosso/shop-new/config/deploy'
-let g:netrw_dirhist_3='/opt/work/scarosso/shop-new/media/konfigurator/scss'
-let g:netrw_dirhist_4='/opt/work/scarosso'
-let g:netrw_dirhist_5='/home/urs/.tmux'
+let g:netrw_dirhist_1='/home/urs/mobile-dev'
