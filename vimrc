@@ -54,4 +54,14 @@ noremap <space> @=((foldclosed(line(".")) < 0) ? 'zc' : 'zo')<cr>
 nmap <F3> :NERDTreeToggle<cr>
 imap <F3> <esc> :NERDTreeToggle<cr>
 
+"rerun last command in a nother tmux pane
+nnoremap <Leader>r :call <SID>TmuxRepeat()<CR>
+inoremap <C-s> <Esc>:w<CR>:call <SID>TmuxRepeat()<CR>a
+noremap  <C-s> :w<CR>:call <SID>TmuxRepeat()<CR>
+
+function! s:TmuxRepeat()
+    silent! exec "!tmux select-pane -l && tmux send up enter && tmux select-pane -l"
+    redraw!
+endfunction
+
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
