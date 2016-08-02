@@ -20,3 +20,6 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+# avoid STRG+S to freeze the shell
+stty -ixon
