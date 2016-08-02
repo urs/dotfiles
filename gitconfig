@@ -1,6 +1,6 @@
 [user]
 	name = Urs Martini
-	email = urs.martini@scarosso.com
+	email = info@urs-martini.de
 [diff]
 	tool = kdiff3
 [merge]
@@ -10,6 +10,10 @@
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	amend = commit --amend -C HEAD
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
 [color]
         ui = true
 [push]

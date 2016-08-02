@@ -51,7 +51,7 @@
 noremap <space> @=((foldclosed(line(".")) < 0) ? 'zc' : 'zo')<cr>
 
 "nerdtree
-nmap <F2> :NERDTreeToggle<cr>
-imap <F2> <esc> :NERDTreeToggle<cr>
+nmap <F3> :NERDTreeToggle<cr>
+imap <F3> <esc> :NERDTreeToggle<cr>
 
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
