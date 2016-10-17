@@ -1,7 +1,7 @@
 "pathogen
-  execute pathogen#infect()
-  execute pathogen#helptags()
-  filetype plugin indent on
+"  execute pathogen#infect()
+"  execute pathogen#helptags()
+"  filetype plugin indent on
 
 "general
   set nocompatible
@@ -35,8 +35,8 @@
 "visual
   syntax on
   set background=dark
-  "  colorscheme jellybeans
   set number
+  set relativenumber
   set ruler
   set cc=78
   set cursorline

@@ -21,5 +21,7 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+export PATH=/usr/local/php5/bin:$PATH
+
 # avoid STRG+S to freeze the shell
 stty -ixon
