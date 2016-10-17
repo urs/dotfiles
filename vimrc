@@ -35,7 +35,7 @@
 "visual
   syntax on
   set background=dark
-  colorscheme jellybeans
+  "  colorscheme jellybeans
   set number
   set ruler
   set cc=78
