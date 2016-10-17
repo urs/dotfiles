@@ -1,22 +1,28 @@
 [user]
-	name = Urs Martini
-	email = info@urs-martini.de
+    name = Urs Martini
+    email = info@urs-martini.de
+
 [diff]
-	tool = kdiff3
+    tool = kdiff3
+
 [merge]
-	tool = kdiff3
+    tool = kdiff3
+
 [core]
-	autocrlf = input
+    autocrlf = input
+
 [alias]
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	amend = commit --amend -C HEAD
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    amend = commit --amend -C HEAD
     co = checkout
     br = branch
     ci = commit
     st = status
+
 [color]
         ui = true
 [push]
-	default = simple
+    default = simple
+
 [rerere]
-	enabled = true
+    enabled = true
