@@ -1,6 +1,7 @@
 [user]
     name = Urs Martini
     email = info@urs-martini.de
+	signingkey = 3B7EF1E0
 
 [diff]
     tool = kdiff3
@@ -12,7 +13,7 @@
     autocrlf = input
 
 [alias]
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset (signed: %G?% GK)' --abbrev-commit --date=relative
     amend = commit --amend -C HEAD
     co = checkout
     br = branch
@@ -20,9 +21,16 @@
     st = status
 
 [color]
-        ui = true
+    ui = true
+
+[pull]
+    rebase = true
+
 [push]
     default = simple
 
 [rerere]
     enabled = true
+
+[commit]
+	gpgsign = true
