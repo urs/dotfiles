@@ -65,3 +65,13 @@ function! s:TmuxRepeat()
 endfunction
 
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+
+" diff mode
+if &diff
+  syntax off
+endif
+
+hi DiffAdd    ctermfg=none ctermbg=10   cterm=none
+hi DiffDelete ctermfg=1    ctermbg=9    cterm=none
+hi DiffChange ctermfg=none ctermbg=12   cterm=none
+hi DiffText   ctermfg=14   ctermbg=none cterm=reverse

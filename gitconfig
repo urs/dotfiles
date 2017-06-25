@@ -4,7 +4,7 @@
 	signingkey = 3B7EF1E0
 
 [diff]
-    tool = kdiff3
+    tool = vimdiff
 
 [merge]
     tool = kdiff3
