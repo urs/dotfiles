@@ -8,6 +8,7 @@
 
 [merge]
     tool = kdiff3
+    ff = false
 
 [core]
     autocrlf = input
