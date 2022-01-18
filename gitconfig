@@ -1,7 +1,7 @@
 [user]
     name = Urs Martini
     email = info@urs-martini.de
-	signingkey = 3B7EF1E0
+	signingkey = 790D3CBC
 
 [diff]
     tool = vimdiff
@@ -35,3 +35,5 @@
 
 [commit]
 	gpgsign = true
+[init]
+	defaultBranch = main
